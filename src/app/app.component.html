@@ -1,0 +1,34 @@
+<div 
+    class="card" 
+    [ngStyle]="{ 'background-color': '#f5f5f5', 'padding': '1rem', 'border-radius': '1rem' }">
+    <p-toolbar [ngStyle]="{ 'border-radius': '3rem', 'background-color': '#6200ea' }">
+        <ng-template pTemplate="center">
+            <div class="flex flex-wrap align-items-center gap-3">
+                <button 
+                    class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-gray-700 transition-all transition-duration-200"
+                    [ngStyle]="{ 'background-color': '#000', 'border': 'none' }"
+                    [routerLink]="['/']">
+                    <i class="pi pi-home text-2xl"></i>
+                </button>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="end">
+            <div class="flex align-items-center gap-2">
+                <p-avatar 
+                    [image]="'https://i.pinimg.com/236x/0c/e8/58/0ce858540f1257be3855cd0f9ec89de0.jpg'" 
+                    shape="circle" 
+                    size="large" 
+                    class="border-2 border-white shadow-md" 
+                    [ngStyle]="{ 'border': '3px solid #ff4081' }">
+                </p-avatar>
+                <span 
+                    class="font-bold" 
+                    [ngStyle]="{ 'color': '#000', 'font-size': '1.2rem' }">
+                    Jary Cuji
+                </span>
+            </div>
+        </ng-template>
+    </p-toolbar>
+</div>
+
+<router-outlet></router-outlet>
